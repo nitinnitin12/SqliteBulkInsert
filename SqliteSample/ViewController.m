@@ -46,7 +46,7 @@
         [sqlObj insertDb:query];
     }
 
-    
+    //Close SQL Object
     [sqlObj closeDb];
     
     NSTimeInterval timeInterval = fabs([start timeIntervalSinceNow]);
