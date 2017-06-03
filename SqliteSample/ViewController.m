@@ -30,6 +30,8 @@
     NSLog(@"Insert Started");
     
     NSDate *start = [NSDate date];
+    // do stuff...
+//    NSTimeInterval timeInterval = [start timeIntervalSinceNow];
     
     SQLite *sqlObj=[[SQLite alloc] initWithSQLFile:@"adminActivity.sqlite"];
     
@@ -44,6 +46,8 @@
         [sqlObj insertDb:query];
     }
 
+    
+    //Another Comment
     //Close SQL Object
     [sqlObj closeDb];
     
